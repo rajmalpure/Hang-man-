@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div>
+        <a href="index.html"><button class="exit">Exit</button></a>
+    </div>
+
+    <div class="main-box">
+        <div class="bg-black">
+            <div class="result-container">
+                <img src="/images/lost.gif" alt="lost-gif" class="result-img">
+                <h3>Game Over..!!</h3>
+                <p>Correct Word was : <b>RAINBOW</b></p>
+                <button class="play-again">Play Again</button>
+            </div>
+        </div>
+        
+        <div class="hangman-container">
+            <img src="./images/hangman-0.png" alt="hangman-image" class="hangman-image">
+            <h2>Hangman</h2>
+        </div>
+        
+        <div class="game-container">
+            <ul class="word-display"></ul>
+            
+            <p class="hint-text">Hint : " "</p>
+            <h4 class="guesses"> Incorrect Guesses : <b id="guess-no">0 / 6</b></h4>
+            
+            <div class="keyboard"></div>
+        </div>
+    </div>
+    <audio src="Funny Gaming Music - Scheming Weasel Faster (Kevin Macleod).mp3" autoplay loop></audio>
+
+    
+</body>
+</html>
+
+<script src="./wordlist.js"></script>
+<script src="./app.js"></script>
